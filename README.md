@@ -154,10 +154,6 @@ brew install --cask google-chrome
 —Install Swagger-CodeGen
 	$ brew install swagger-codger
 
-—Install Scala
-	$ brew reinstall scala
-    $ brew install sbt
-
 —Install Apache Spark
 	$ brew install apache-spark
 
@@ -171,11 +167,10 @@ brew cask install textmate
 	$ sdk use java 8.0.252.hs-adpt
 	$ sdk default java 8.0.252.hs-adpt
 
-	$ sdk install scala 2.13.3
-	$ sdk use scala 2.13.3
-	$ sdk default scala 2.13.3
-
-         $ sdk install sbt
+	$ sdk install scala 3.0.1
+	$ sdk use scala 3.0.1
+	$ sdk default scala 3.0.1
+    $ sdk install sbt 1.5.5
 
 	$ sdk install gradle 6.5.1
 	$ sdk use gradle 6.5.1
