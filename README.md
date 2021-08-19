@@ -156,8 +156,7 @@ brew install --cask google-chrome
 
 —Install Scala
 	$ brew reinstall scala
-        $ brew install sbt
-		$ brew install sbt
+    $ brew install sbt
 
 —Install Apache Spark
 	$ brew install apache-spark
