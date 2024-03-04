@@ -1,6 +1,96 @@
 #MySetUp
 ————————
 
+
+#MySetUp
+————————
+
+https://brew.sh
+
+ ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+#Other peoples setup notes:
+	http://sourabhbajaj.com/mac-setup/
+	https://dev.to/equiman/setup-macos-for-development-3kc2
+
+# Modern Terminal  WARP #
+ https://docs.warp.dev/getting-started/readme
+https://www.warp.dev/blog
+brew install --cask warp
+
+# Install SDK Man
+	curl -s "https://get.sdkman.io" | bash 
+	# then in new terminal
+	source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Java 
+sdk install java 21.0.2-zulu
+sdk use java 21.0.2-zulu
+sdk default java 21.0.2-zulu
+
+# Gradle
+sdk install gradle 8.6
+sdk use gradle 8.6
+sdk default gradle 8.6
+
+#  Visual Studio Code —because polyglot 
+brew install --cask visual-studio-code
+
+On first run press ⌘ + ⇧ + P and run the command: Shell Command: install 'code' command PATH. And now you can use code command from the command line. Example: code . open an editor on the current folder.
+
+# Git
+brew install git
+brew unlink git && brew link git
+brew install git-lfs
+git lfs install
+
+# Git Config
+  # switch from vim to vs code
+git config --global core.editor 'code --wait'
+  # use main branch be default as per GitHub
+git config --global init.defaultBranch main
+
+git config --global user.name “iCameron101”
+git config --global user.email “dev@icameron101.com"
+
+git config --edit --global
+
+# Use VScode for difftool and  mergetool add below to global config
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+
 https://brewinstall.org
 
 #Other peoples setup notes:
